@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+    import 'bootstrap/dist/css/bootstrap.css';
 const Login=()=>{
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
@@ -22,15 +24,19 @@ const Login=()=>{
         <>
         <h1>Login Page</h1>
         <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="email">Email: </label>
-                <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
+            <div class="d-flex flex-column justify-content-center p-3 mb-3">
+                <div class="d-flex flex-column justifty-content-center p-3">
+                    <label htmlFor="email">Email: </label>
+                    <input type="email" id="email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
+                </div>
+                <div class="d-flex flex-column justifty-content-center p-3">
+                    <label htmlFor="password">Password: </label>
+                    <input type="password" id="password" value={password} onChange={(e)=>setPassword(e.target.value)} required/>
+                </div>
             </div>
-            <div>
-                <label htmlFor="password">Password: </label>
-                <input type="password" id="password" value={password} onClick={(e)=>setPassword(e.target.value)} required/>
-            </div>
-            <button tupe="submit">Login</button>
+            <button class="btn btn-primary" tupe="submit">Login</button>
+
+            
         </form>
         </>
     )
