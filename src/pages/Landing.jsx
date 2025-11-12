@@ -6,10 +6,10 @@ const Landing=()=>{
         <>
         
         <Link to="/login">
-        <button>Login</button>
+        <button class="btn btn-primary">Login</button>
         </Link>
         <Link to="/signup">
-        <button>Sign Up</button>
+        <button class="btn btn-danger">Sign Up</button>
         </Link>
         </>
     )
