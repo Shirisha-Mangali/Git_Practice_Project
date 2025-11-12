@@ -12,6 +12,7 @@ const Home =()=>{
                 <p>3. Basic Routing</p>
                 <p>4. Nested Routing</p>
                 <p>5. Folder structure</p>
+                <p>7. Added bootstrap</p>
             </div>
         </div>
         </>
