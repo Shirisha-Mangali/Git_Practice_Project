@@ -11,6 +11,7 @@ const Home =()=>{
                 <p>2. React Router Dom</p>
                 <p>3. Basic Routing</p>
                 <p>4. Nested Routing</p>
+                <p>5. Folder structure</p>
             </div>
         </div>
         </>
